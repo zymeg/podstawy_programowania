@@ -1,0 +1,114 @@
+/* Ogolne */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Serif', sans-serif;
+}
+
+h1{
+    margin: 1rem;
+}
+
+#sterowanie {
+    width: 90%;
+    margin: 1rem auto;
+    display: grid;
+    grid-gap: .5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#sterowanie button,
+#sterowanie select {
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: .7rem;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#sterowanie button{
+    background: #ad4;
+    color: #333
+}
+
+#sterowanie button:hover{
+    background: #7a1;
+    color: #111
+}
+
+#sterowanie select{
+    border: 1px solid #333
+}
+
+/* Lista */
+#lista{
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 40vw;
+    margin: 1rem;
+}
+
+#lista div{
+    padding: .5rem 1rem;
+
+}
+
+#lista>div:nth-child(6n + 1),
+#lista>div:nth-child(6n + 2),
+#lista>div:nth-child(6n + 3){
+    background: #aaa
+} 
+
+#lista>div:nth-child(1),
+#lista>div:nth-child(2),
+#lista>div:nth-child(3){
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+
+
+.hidden{
+    visibility: hidden;
+}
+
+/* PARAGON */
+
+#paragon{
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 40vw;
+    margin: 1rem;
+}
+
+#paragon div{
+    padding: .5rem 1rem;
+
+}
+
+#paragon div span {
+    display: block;
+    margin: 0 auto;
+
+}
+
+#paragon h1 {
+    grid-column:1/2
+}
+
+#paragon>div:nth-child(6n + 3),
+#paragon>div:nth-child(6n + 4),
+#paragon>div:nth-child(6n + 5){
+    background: #aaa
+} 
+
+
